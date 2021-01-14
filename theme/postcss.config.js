@@ -4,6 +4,7 @@ module.exports = {
     'postcss-easy-import': {
       prefix: '_'
     },
+    'postcss-nested': {},
     tailwindcss: {},
     autoprefixer: {},
   }

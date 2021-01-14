@@ -58,10 +58,6 @@ module.exports = {
                     ]
                 },
                 {
-                    test: /\.css$/i,
-                    use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
-                },
-                {
                     test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
                     use: {
                       loader: 'file-loader',
@@ -75,9 +71,6 @@ module.exports = {
         plugins: [
             new CleanWebpackPlugin(),
             new webpack.NoEmitOnErrorsPlugin(),
-            new MiniCssExtractPlugin({
-                filename: 'css/theme.css',
-            }),
             new CopyWebpackPlugin([
                 { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './resources' }
             ]),
