@@ -125,3 +125,15 @@
         display: none;
     }
 }
+
+/* Default breakpoint
+.aem-Grid {
+    @include generate-grid(default, $max_col);
+}
+
+Phone breakpoint
+@media (max-width: 768px) {
+    .aem-Grid {
+        @include generate-grid(phone, $max_col);
+    }
+} */

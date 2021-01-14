@@ -2,6 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import './site/grid';
-@import './site/base';
-@import './components/*/*';
+/* @import './site/grid'; */
+@import './site/base.css';
+@import './components/*/*.css';
