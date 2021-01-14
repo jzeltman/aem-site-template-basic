@@ -2,7 +2,7 @@
 module.exports = {
   plugins: {
     'postcss-easy-import': {
-      prefix: true
+      prefix: '_'
     },
     tailwindcss: {},
     autoprefixer: {},

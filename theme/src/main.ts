@@ -7,9 +7,6 @@ accordance with the terms of the Adobe license agreement accompanying
 it.
 */
 
-// Stylesheets
-import "./main.scss";
-
 // Javascript or Typescript
 import "./**/*.js";
 import "./**/*.ts";
