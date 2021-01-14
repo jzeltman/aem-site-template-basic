@@ -1,7 +1,7 @@
 // postcss.config.js
 const generateGrid = require('./src/mixins/grid');
 
-module.exports = {
+module.exports = ({env}) => ({
   plugins: {
     'postcss-easy-import': {
       prefix: '_'
@@ -15,5 +15,6 @@ module.exports = {
     'postcss-at-rules-variables': {},
     tailwindcss: {},
     autoprefixer: {},
+    'cssnano': env === 'production' ? {} : false
   }
-}
+});
